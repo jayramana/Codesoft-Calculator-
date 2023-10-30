@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'calc-font';
+  src: url("digital-7.ttf");
+}
+
+
+
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .casio {
+  height: 60vh;
+  width: 500px;
+  background-color: #212529;
+  padding: 3rem 0rem;
+  transform: translateY(40px);
+  border-radius: 20px;
+}
+.casio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 5rem;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+.btns {
+  display: grid;
+  padding: 0.3rem;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: fit-content;
+  gap: 1rem;
+  justify-content: center;
+  height: 100px;
+  width: fit-content;
+}
+.btn {
+  padding: 1rem 1.5rem;
+  border-radius: 11px;
+  font-family: "Roboto Flex";
+  background-color: #F06595;
+  border: 0;
+  transition: all 0.3s;
+  font-size: large;
+
+  margin-right: 0.3rem;
+}
+.ctrl {
+  padding: 1rem;
+  border-radius: 10rem;
+}
+
+.input {
+  background-color: white;
+  height: 70px;
+  border-radius: 10px;
+  width: 350px;
+  padding: 0 0.5rem;
+  margin-bottom: 1.5rem;
+  font-family: "calc-font";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.inp,
+.output {
+  display: inline;
+}
+.output {
+  font-size: 2.4rem;
+  font-weight: 500;
+  display: flex;
+  font-family: "calc-font";
+  justify-content: flex-end;
+}
+.equal {
+  max-width: fit-content;
+  padding: 1rem 1.5rem;
+  border-radius: 11px;
+  transform: translateX(-50px);
+  background-color:#F06595;
+}
+.invisible {
+  padding: 1.5rem 2rem;
+  visibility: hidden;
+}
+.r1,
+.r2,
+.r3,
+.r4 {
+  transform: translateX(25px);
+}
+
+.controls {
+  transform: translateX(40px);
+
+}
+
+.message{
+  text-transform: uppercase;
+  font-family: "calc-font";
+  font-size: 3.6rem;
+  letter-spacing: 0.5rem;
+}
+.on{
+  background-color: #20c997;
+  border: none;
+}
+.off{
+  background-color: #fa5252;
+  border: none;
+  transform: translateX(-20px);
+}
+
+.ac{
+  background-color: #f03e3e;
+  border: none;
+}
+
+.btn:hover{
+  background-color: white;
+}
+.c{
+  text-align: center;
+  justify-content: center;
+  border-radius: 10px;
+  transform: translateX(-10px);
+  border: 0;
+  background-color: #f03e3e;
+}
